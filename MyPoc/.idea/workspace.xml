@@ -11,7 +11,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/utility_setup.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/resources/utility_setup.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
@@ -22,32 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testsuit/ustory1_BuyanEquity.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-              <folding>
-                <element signature="e#0#566#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testsuit/start.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/ustory1_BuyanEquity.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="221">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
-                <element signature="e#0#71#0" expanded="true" />
+                <element signature="e#0#403#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/screen0_login.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/resources/screen0_login.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
               <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
@@ -59,7 +47,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/screenA_leftdrawer.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/resources/screenA_leftdrawer.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
@@ -68,7 +56,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/screen1_landing.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/resources/screen1_landing.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
@@ -80,7 +68,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/screen4_buyEquity.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/resources/screen4_buyEquity.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
               <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
@@ -89,7 +77,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/screen5_reviewAndbuy.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/resources/screen5_reviewAndbuy.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-14">
               <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
@@ -98,7 +86,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/screen2_home.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/resources/screen2_home.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="43" column="51" lean-forward="true" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
@@ -110,7 +98,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/screen3_equityports.robot">
+        <entry file="file://$PROJECT_DIR$/testsuite/resources/screen3_equityports.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
@@ -152,6 +140,7 @@
         <option value="$PROJECT_DIR$/resources/screen4_buyEquity.robot" />
         <option value="$PROJECT_DIR$/resources/start.robot" />
         <option value="$PROJECT_DIR$/testsuit/start.robot" />
+        <option value="$PROJECT_DIR$/testsuite/ustory1_BuyanEquity.robot" />
       </list>
     </option>
   </component>
@@ -177,7 +166,7 @@
             <path>
               <item name="MyPoc" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyPoc" type="462c0819:PsiDirectoryNode" />
-              <item name="testsuit" type="462c0819:PsiDirectoryNode" />
+              <item name="testsuite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,6 +182,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shivam.raghuwanshi\PycharmProjects\MyPoc\testsuite" />
       <recent name="C:\Users\Shivam.raghuwanshi\PycharmProjects\MyPoc\testsuit" />
     </key>
   </component>
@@ -220,22 +210,22 @@
       <updated>1559019111117</updated>
       <workItem from="1559019121912" duration="2157000" />
       <workItem from="1559021321420" duration="7147000" />
-      <workItem from="1559029868668" duration="10358000" />
+      <workItem from="1559029868668" duration="11412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19662000" />
+    <option name="totallyTimeSpent" value="20716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" />
@@ -265,14 +255,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/screenA_leftdrawer.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/resources/screenA_leftdrawer.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/screen0_login.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/resources/screen0_login.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
@@ -282,7 +272,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/screen1_landing.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/resources/screen1_landing.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
@@ -292,14 +282,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/screen5_reviewAndbuy.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/resources/screen5_reviewAndbuy.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/screen2_home.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/resources/screen2_home.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="43" column="51" lean-forward="true" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
@@ -309,7 +299,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/screen3_equityports.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/resources/screen3_equityports.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
@@ -326,7 +316,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/utility_setup.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/resources/utility_setup.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
@@ -336,29 +326,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/screen4_buyEquity.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/resources/screen4_buyEquity.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testsuit/ustory1_BuyanEquity.robot">
+    <entry file="file://$PROJECT_DIR$/testsuit/start.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <element signature="e#0#566#0" expanded="true" />
+            <element signature="e#0#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testsuit/start.robot">
+    <entry file="file://$PROJECT_DIR$/testsuite/ustory1_BuyanEquity.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="221">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
-            <element signature="e#0#71#0" expanded="true" />
+            <element signature="e#0#403#0" expanded="true" />
           </folding>
         </state>
       </provider>
