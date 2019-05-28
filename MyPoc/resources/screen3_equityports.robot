@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    This Module is to Handle the Equity Port Screen
 Library         AppiumLibrary
+Resource       screen1_landing.robot
 
 *** Variables ***
 ${buy_button}   in.upstox.pro:id/stockDetailsBuyBtn
@@ -10,25 +11,33 @@ ${info_layout}  in.upstox.pro:id/oe_info_layout
 
 *** Keywords ***
 Verify the buy button is present
-    element should be visible  ${buy_button}
+    Wait for Element to get visible     ${buy_button}
+    element should be visible           ${buy_button}
 
 Verified the buy button presence
-    element should be enabled  ${buy_button}
+    Wait for Element to get visible     ${buy_button}
+    element should be enabled           ${buy_button}
 
 Verify the sell button present
-    element should be visible  ${sell_button}
+    Wait for Element to get visible     ${sell_button}
+    element should be visible           ${sell_button}
 
 Verified the sell button presence
-    element should be enabled   ${sell_button}
+    Wait for Element to get visible     ${sell_button}
+    element should be enabled           ${sell_button}
 
 Verify the graph is present
-    element should be visible   ${graph}
+    Wait for Element to get visible     ${graph}
+    element should be visible           ${graph}
 
 Verified the graph presence
-    element should be enabled   ${graph}
+    Wait for Element to get visible     ${graph}
+    element should be enabled           ${graph}
 
 Click on buy button
-    click element   ${buy_button}
+    Wait for Element to get visible     ${buy_button}
+    click element                       ${buy_button}
 
 Successfully clicked on buy button
-    element should be visible  ${info_layout}
+    Wait for Element to get visible     ${info_layout}
+    element should be visible           ${info_layout}

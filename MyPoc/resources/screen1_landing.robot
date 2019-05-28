@@ -16,13 +16,13 @@ ${long_wait_time}       30
 
 *** Keywords ***
 Click on Skip Button
-    click element   ${skip_button}
-    wait until element is visible  ${home_view}     timeout=${long_wait_time}
+    click element                   ${skip_button}
+    wait until element is visible   ${home_view}     timeout=${long_wait_time}
 
 Navigated to Home Screen
-    element should be visible   ${left_pane_menu}
-    element should be visible   ${home_view}
+    element should be visible       ${left_pane_menu}
+    element should be visible       ${home_view}
 
 Wait for Element to get visible
         [Arguments]     ${element}
-        wait until element is visible      ${element}   ${high_wait_time}
+        wait until element is visible      ${element}           ${high_wait_time}
