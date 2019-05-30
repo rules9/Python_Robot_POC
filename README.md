@@ -47,26 +47,27 @@ run the scripts in perfect way.
 Robot Framework is basically aligned for acceptance Test driven development (ATDD), along with that this POC is designed based on the Page object modeling as each screen is dived into module. Along with that this POC behaves in Keyword driven modeling. So altogether it is the complete Hybrid solution for Mobile Automation.
 	The project for the POC structure is as follow:
 ### MyPOC >> testsuite 
-•	ustory1_BuyanEquity (Test Script): This is the user story based test script, where you find one user story is implemented with the help of screen resources file.
+1	ustory1_BuyanEquity (Test Script): This is the user story based test script, where you find one user story is implemented with the help of screen resources file.
 The test steps are written in such a way that anyone can get the idea what is being executed.
 
-•	resources : This contains all the resource file for each of the screen, the resources consists of
-(i)	Keyword: This will be the user customized keywords for the test cases that are created in a way that anyone can get the idea what the functionality is meant to do.
+2	resources : This contains all the resource file for each of the screen, the resources consists of:
 
-(ii)	Variables: These are the elements and data defined, which are used in the Keywords
+(2.1)	Keyword: This will be the user customized keywords for the test cases that are created in a way that anyone can get the idea what the functionality is meant to do.
+
+(2.2)	Variables: These are the elements and data defined, which are used in the Keywords
  
 ##	Resource files for the POCs are:
 1.	Base Environmental variables and set-up file
-a.	utility_setup.robot
+1.1	utility_setup.robot
 
 2.	POM based Resources:
-a.	screen0_login.robot
-b.	screen1_landing.robot
-c.	screen2_home.robot
-d.	screen3_equityports.robot
-e.	screen4_buyEquity.robot
-f.	screen5_reviewAndbuy.robot
-g.	screenA_leftdrawer.robot
+2.1	screen0_login.robot
+2.2	screen1_landing.robot
+2.3	screen2_home.robot
+2.4	screen3_equityports.robot
+2.5	screen4_buyEquity.robot
+2.6	screen5_reviewAndbuy.robot
+2/7	screenA_leftdrawer.robot
 
 
 
@@ -81,15 +82,17 @@ a.	All the tools and its path setup
 b.	Test data is already present
 
 1.	Update the pip using:
-•	pip install --upgrade pip
+	1.1	pip install --upgrade pip
 
 2.	Install Robot Appium-Library using:
-•	pip install robotframework-appiumlibrary
+	1.2	pip install robotframework-appiumlibrary
 
 3.	Start the emulator 
-•	Create a device with latest configuration and mention the same in the utilites_setup.robot file.
-•	In case of Real device mention the device name and configuration.
-•	To get the device name use adb devices command on cmd prompt/terminal.
+	3.1	Create a device with latest configuration and mention the same in the utilites_setup.robot file.
+	
+	3.2	In case of Real device mention the device name and configuration.
+	
+	3.3	To get the device name use adb devices command on cmd prompt/terminal.
 
 4.	Configure the Appium for local host and Android Home
  
@@ -99,15 +102,15 @@ b.	Test data is already present
 6.	Run the Robot script using command:
 
 ##### command : Robot  -T –d 	<result-directory-name> <script-path>.robot.
-•	-T : Generated report with Data and Time stamp 
-•	-d : For creating results directory
+1	-T : Generated report with Data and Time stamp 
+2	-d : For creating results directory
 
 
 ## Note: The POC is created in a short duration hence work is in-progress mainly for 
-•	Code optimization
-•	Script performance
-•	Script Designing
-•	Test cases for iOS app will be added soon
+1	Code optimization
+2	Script performance
+3	Script Designing
+4	Test cases for iOS app will be added soon
 Rest of the things will also be taken care when it is completed fully.
 
 ### Reference: Refer Wiki for more information. 
