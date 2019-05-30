@@ -66,16 +66,17 @@ Robot Framework is basically aligned for acceptance Test driven development (ATD
 	The project for the POC structure is as follow:
 ### MyPOC >> testsuite 
 
-1	ustory1_BuyanEquity (Test Script): This is the user story based test script, where you find one user story is implemented with the help of screen resources file.
+#### 1	ustory1_BuyanEquity (Test Script): This is the user story based test script, where you find one user story is implemented with the help of screen resources file.
+
 The test steps are written in such a way that anyone can get the idea what is being executed.
 
-2	resources : This contains all the resource file for each of the screen, the resources consists of:
+#### 2	resources : This contains all the resource file for each of the screen, the resources consists of:
 
-(2.1)	Keyword: This will be the user customized keywords for the test cases that are created in a way that anyone can get the idea what the functionality is meant to do.
+##### (2.1)	Keyword: This will be the user customized keywords for the test cases that are created in a way that anyone can get the idea what the functionality is meant to do.
 
-(2.2)	Variables: These are the elements and data defined, which are used in the Keywords
+##### (2.2)	Variables: These are the elements and data defined, which are used in the Keywords
  
-##	Resource files for the POCs are:
+#### Resource files for the POCs are:
 1.	Base Environmental variables and set-up file
 1.1	utility_setup.robot
 
