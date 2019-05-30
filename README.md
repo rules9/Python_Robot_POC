@@ -144,5 +144,5 @@ b.	Test data is already present
 
 Rest of the things will also be taken care when it is completed fully.
 
-### Reference: Refer Wiki for more information. 
+### Reference: Refer WikiPage.docx for more information. 
 			
