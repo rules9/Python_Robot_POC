@@ -98,7 +98,7 @@ b.	Test data is already present
 
 6.	Run the Robot script using command:
 
-#######  command : Robot  -T –d 	<result-directory-name> <script-path>.robot.
+####### command : Robot  -T –d 	<result-directory-name> <script-path>.robot.
 •	-T : Generated report with Data and Time stamp 
 •	-d : For creating results directory
 
@@ -110,5 +110,5 @@ b.	Test data is already present
 •	Test cases for iOS app will be added soon
 Rest of the things will also be taken care when it is completed fully.
 
-# Reference: Refer Wiki for more information. 
+### Reference: Refer Wiki for more information. 
 			
