@@ -4,16 +4,14 @@ Library         AppiumLibrary
 Library         Process
 
 *** Variables ***
-${app_path}             C:\Users\Shivam.raghuwanshi
 ${automationName}       Appium
 ${appium_host}          http://localhost:4723/wd/hub
 ${platformName}         Android
 ${platform_version}     9
-${deviceName}           254367b3
+${deviceName}           emulator-5554
 ${appPackage}           in.upstox.pro
 ${appActivity}          .views.main.UpstoxLauncherActivity
-${androidInstallPath}   C:\Users\Shivam.raghuwanshi\upstoxpro.Apk
-${app}                  C:\\Users\\Shivam.raghuwanshi\\upstoxpro.apk
+${app}                  C:\\Users\\Shivam.raghuwanshi\\upstox.apk
 ${alias}                upstox
 
 ${skip_button}          in.upstox.pro:id/intro_btn_skip

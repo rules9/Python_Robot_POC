@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190530 13:21:59.871" rpa="false">
+<suite id="s1" name="ustory1 BuyanEquity" source="C:\Users\Shivam.raghuwanshi\PycharmProjects\MyPoc\testsuite\ustory1_BuyanEquity.robot">
+<test id="s1-t1" name="1: Install and Open App">
+<kw name="Install and Open application" library="utility_setup">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${appium_host}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>platformVersion=${platform_version}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>app=${app}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:00.369" endtime="20190530 13:22:13.027"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:00.369" endtime="20190530 13:22:13.028"></status>
+</kw>
+<kw name="The App should get open" library="utility_setup">
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${skip_button}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:13.033" endtime="20190530 13:22:13.654"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${next_button}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:13.654" endtime="20190530 13:22:14.081"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:13.033" endtime="20190530 13:22:14.081"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:00.369" endtime="20190530 13:22:14.082" critical="yes"></status>
+</test>
+<test id="s1-t2" name="2: Navigate to Home Screen">
+<kw name="Click on Skip Button" library="screen1_landing">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${skip_button}</arg>
+</arguments>
+<msg timestamp="20190530 13:22:14.088" level="INFO">Clicking element 'in.upstox.pro:id/intro_btn_skip'.</msg>
+<status status="PASS" starttime="20190530 13:22:14.083" endtime="20190530 13:22:17.670"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${home_view}</arg>
+<arg>timeout=${long_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:17.671" endtime="20190530 13:22:43.959"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:14.083" endtime="20190530 13:22:43.960"></status>
+</kw>
+<kw name="Navigated to Home Screen" library="screen1_landing">
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${left_pane_menu}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:43.961" endtime="20190530 13:22:44.138"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${home_view}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:44.138" endtime="20190530 13:22:44.219"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:43.960" endtime="20190530 13:22:44.219"></status>
+</kw>
+<kw name="Verify Given Equities in Equity List" library="screen2_home">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${equity_adani}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:44.220" endtime="20190530 13:22:44.385"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:44.220" endtime="20190530 13:22:44.385"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is enabled.</doc>
+<arguments>
+<arg>${equity_adani}</arg>
+</arguments>
+<msg timestamp="20190530 13:22:44.492" level="INFO">Element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.FrameLayout/android.widget.LinearLayout' is enabled .</msg>
+<status status="PASS" starttime="20190530 13:22:44.386" endtime="20190530 13:22:44.492"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is enabled.</doc>
+<arguments>
+<arg>${equity_ambuja}</arg>
+</arguments>
+<msg timestamp="20190530 13:22:44.603" level="INFO">Element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout' is enabled .</msg>
+<status status="PASS" starttime="20190530 13:22:44.492" endtime="20190530 13:22:44.603"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is enabled.</doc>
+<arguments>
+<arg>${equity_asian}</arg>
+</arguments>
+<msg timestamp="20190530 13:22:44.775" level="INFO">Element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[3]/android.widget.FrameLayout/android.widget.LinearLayout' is enabled .</msg>
+<status status="PASS" starttime="20190530 13:22:44.604" endtime="20190530 13:22:44.776"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:44.220" endtime="20190530 13:22:44.776"></status>
+</kw>
+<kw name="Equities verified successfully" library="screen2_home">
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${home_screen}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:44.777" endtime="20190530 13:22:44.856"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:44.776" endtime="20190530 13:22:44.857"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:14.082" endtime="20190530 13:22:44.857" critical="yes"></status>
+</test>
+<test id="s1-t3" name="3. Log-in through left drawer">
+<kw name="Open the left drwaer" library="screen2_home">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${leftmenu}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:44.859" endtime="20190530 13:22:45.037"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:44.859" endtime="20190530 13:22:45.037"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${leftmenu}</arg>
+</arguments>
+<msg timestamp="20190530 13:22:45.042" level="INFO">Clicking element 'Open'.</msg>
+<status status="PASS" starttime="20190530 13:22:45.038" endtime="20190530 13:22:45.763"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:44.858" endtime="20190530 13:22:45.763"></status>
+</kw>
+<kw name="Left drawer opened successfully" library="screenA_leftdrawer">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${welcome text}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:45.764" endtime="20190530 13:22:46.792"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:45.763" endtime="20190530 13:22:46.792"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${welcome text}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:46.792" endtime="20190530 13:22:46.981"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:45.763" endtime="20190530 13:22:46.981"></status>
+</kw>
+<kw name="Click on log-in Button" library="screenA_leftdrawer">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${login_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:46.982" endtime="20190530 13:22:47.120"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:46.982" endtime="20190530 13:22:47.120"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${login_button}</arg>
+</arguments>
+<msg timestamp="20190530 13:22:47.124" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout'.</msg>
+<status status="PASS" starttime="20190530 13:22:47.120" endtime="20190530 13:22:47.480"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:46.981" endtime="20190530 13:22:47.481"></status>
+</kw>
+<kw name="Navigated to Login Screen successfully" library="screenA_leftdrawer">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${signin_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:47.482" endtime="20190530 13:22:49.593"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:47.481" endtime="20190530 13:22:49.593"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${signin_button}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:49.593" endtime="20190530 13:22:49.696"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:47.481" endtime="20190530 13:22:49.696"></status>
+</kw>
+<kw name="Enter the valid Username" library="screen0_login">
+<arguments>
+<arg>${input_username}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:49.714" endtime="20190530 13:22:49.845"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:49.713" endtime="20190530 13:22:49.845"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${username}</arg>
+<arg>${input_username}</arg>
+</arguments>
+<msg timestamp="20190530 13:22:49.850" level="INFO">Typing text '115723' into text field 'in.upstox.pro:id/user_id_value'</msg>
+<status status="PASS" starttime="20190530 13:22:49.845" endtime="20190530 13:22:56.223"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:49.713" endtime="20190530 13:22:56.223"></status>
+</kw>
+<kw name="Enter the valid Password" library="screen0_login">
+<arguments>
+<arg>${input_password}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:22:56.230" endtime="20190530 13:22:57.087"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:56.230" endtime="20190530 13:22:57.088"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${input_password}</arg>
+</arguments>
+<msg timestamp="20190530 13:22:57.092" level="INFO">Typing text 'shobhit@123' into text field 'in.upstox.pro:id/password_value'</msg>
+<status status="PASS" starttime="20190530 13:22:57.088" endtime="20190530 13:23:02.813"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:56.229" endtime="20190530 13:23:02.814"></status>
+</kw>
+<kw name="Click on Signin Button" library="screen0_login">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${signin_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:02.815" endtime="20190530 13:23:03.427"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:02.814" endtime="20190530 13:23:03.427"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${signin_button}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:03.432" level="INFO">Clicking element 'in.upstox.pro:id/sign_in_btn'.</msg>
+<status status="PASS" starttime="20190530 13:23:03.428" endtime="20190530 13:23:03.685"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:02.814" endtime="20190530 13:23:03.686"></status>
+</kw>
+<kw name="The user be navigated to pin security screen successfully" library="screen0_login">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${pin_field}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:03.690" endtime="20190530 13:23:05.970"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:03.690" endtime="20190530 13:23:05.971"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${pin_field}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:05.971" endtime="20190530 13:23:06.061"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:03.690" endtime="20190530 13:23:06.061"></status>
+</kw>
+<kw name="Enter the year of birth" library="screen0_login">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${key_pad}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:06.063" endtime="20190530 13:23:06.098"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:06.062" endtime="20190530 13:23:06.098"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${keypad_button1}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:06.103" level="INFO">Clicking element 'in.upstox.pro:id/button1'.</msg>
+<status status="PASS" starttime="20190530 13:23:06.099" endtime="20190530 13:23:06.377"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${keypad_button9}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:06.382" level="INFO">Clicking element 'in.upstox.pro:id/button9'.</msg>
+<status status="PASS" starttime="20190530 13:23:06.377" endtime="20190530 13:23:10.083"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${keypad_button9}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:10.088" level="INFO">Clicking element 'in.upstox.pro:id/button9'.</msg>
+<status status="PASS" starttime="20190530 13:23:10.083" endtime="20190530 13:23:13.253"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${keypad_button0}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:13.258" level="INFO">Clicking element 'in.upstox.pro:id/button0'.</msg>
+<status status="PASS" starttime="20190530 13:23:13.254" endtime="20190530 13:23:13.502"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:06.062" endtime="20190530 13:23:13.502"></status>
+</kw>
+<kw name="User should be navigated to Home Screen" library="screen0_login">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${home_screen}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:13.505" endtime="20190530 13:23:24.455"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:13.505" endtime="20190530 13:23:24.455"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${home_screen}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:24.455" endtime="20190530 13:23:28.988"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:13.504" endtime="20190530 13:23:28.988"></status>
+</kw>
+<kw name="Tab in the screen to access the list" library="screen2_home">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${equity_of_list}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:28.990" endtime="20190530 13:23:34.706"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:28.989" endtime="20190530 13:23:34.707"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>${equity_of_list}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:34.707" endtime="20190530 13:23:40.006"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:28.989" endtime="20190530 13:23:40.006"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:22:44.858" endtime="20190530 13:23:40.007" critical="yes"></status>
+</test>
+<test id="s1-t4" name="4. Select and Buy the provided Equity">
+<kw name="Select Given Equity" library="screen2_home">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>${swipe_x}</arg>
+<arg>${swipe_y}</arg>
+<arg>${swipe_end_x}</arg>
+<arg>${swipe_end_y}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:40.018" endtime="20190530 13:23:41.318"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${equity_provided}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:41.319" endtime="20190530 13:23:41.862"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:41.318" endtime="20190530 13:23:41.862"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${equity_provided}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:41.867" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[6]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView[1]'.</msg>
+<status status="PASS" starttime="20190530 13:23:41.862" endtime="20190530 13:23:43.855"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:40.018" endtime="20190530 13:23:43.856"></status>
+</kw>
+<kw name="Equity Selected Successfully" library="screen2_home">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${equity_port}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:43.862" endtime="20190530 13:23:47.688"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:43.861" endtime="20190530 13:23:47.688"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${equity_port}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:47.688" endtime="20190530 13:23:50.041"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:43.861" endtime="20190530 13:23:50.042"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:40.016" endtime="20190530 13:23:50.044" critical="yes"></status>
+</test>
+<test id="s1-t5" name="5. Verify the Contents present at Equity port screen">
+<kw name="Verify the sell button present" library="screen3_equityports">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${sell_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:50.046" endtime="20190530 13:23:54.362"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:50.046" endtime="20190530 13:23:54.362"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${sell_button}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:54.362" endtime="20190530 13:23:54.443"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:50.045" endtime="20190530 13:23:54.444"></status>
+</kw>
+<kw name="Verified the sell button presence" library="screen3_equityports">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${sell_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:54.445" endtime="20190530 13:23:54.538"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:54.444" endtime="20190530 13:23:54.538"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is enabled.</doc>
+<arguments>
+<arg>${sell_button}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:54.610" level="INFO">Element 'in.upstox.pro:id/stockDetailsSellBtn' is enabled .</msg>
+<status status="PASS" starttime="20190530 13:23:54.538" endtime="20190530 13:23:54.610"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:54.444" endtime="20190530 13:23:54.610"></status>
+</kw>
+<kw name="Verify the buy button is present" library="screen3_equityports">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${buy_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:54.611" endtime="20190530 13:23:54.678"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:54.611" endtime="20190530 13:23:54.678"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${buy_button}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:54.679" endtime="20190530 13:23:54.733"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:54.611" endtime="20190530 13:23:54.733"></status>
+</kw>
+<kw name="Verified the buy button presence" library="screen3_equityports">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${buy_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:54.735" endtime="20190530 13:23:54.835"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:54.734" endtime="20190530 13:23:54.835"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is enabled.</doc>
+<arguments>
+<arg>${buy_button}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:55.517" level="INFO">Element 'in.upstox.pro:id/stockDetailsBuyBtn' is enabled .</msg>
+<status status="PASS" starttime="20190530 13:23:54.836" endtime="20190530 13:23:55.517"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:54.734" endtime="20190530 13:23:55.517"></status>
+</kw>
+<kw name="Click on buy button" library="screen3_equityports">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${buy_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:55.518" endtime="20190530 13:23:55.592"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:55.518" endtime="20190530 13:23:55.593"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${buy_button}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:55.597" level="INFO">Clicking element 'in.upstox.pro:id/stockDetailsBuyBtn'.</msg>
+<status status="PASS" starttime="20190530 13:23:55.593" endtime="20190530 13:23:56.764"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:55.518" endtime="20190530 13:23:56.764"></status>
+</kw>
+<kw name="Successfully clicked on buy button" library="screen3_equityports">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${info_layout}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:56.766" endtime="20190530 13:23:58.157"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:56.766" endtime="20190530 13:23:58.157"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${info_layout}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:58.157" endtime="20190530 13:23:58.353"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:56.766" endtime="20190530 13:23:58.354"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:50.044" endtime="20190530 13:23:58.354" critical="yes"></status>
+</test>
+<test id="s1-t6" name="6. Fill all the purchase details">
+<kw name="Enter the quantity" library="screen4_buyEquity">
+<arguments>
+<arg>${quantiy_of_product}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${quantity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:23:58.357" endtime="20190530 13:23:58.408"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:58.356" endtime="20190530 13:23:58.408"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${quantity}</arg>
+<arg>${quantity_number}</arg>
+</arguments>
+<msg timestamp="20190530 13:23:58.413" level="INFO">Typing text '3' into text field 'in.upstox.pro:id/quantity_value'</msg>
+<status status="PASS" starttime="20190530 13:23:58.409" endtime="20190530 13:24:10.317"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:58.356" endtime="20190530 13:24:10.317"></status>
+</kw>
+<kw name="Select the Order Complexity" library="screen4_buyEquity">
+<arguments>
+<arg>${order_complexity_type}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${order_complexity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:10.318" endtime="20190530 13:24:10.955"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:10.318" endtime="20190530 13:24:10.955"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${order_complexity}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:10.960" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.Spinner/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20190530 13:24:10.955" endtime="20190530 13:24:11.215"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${simple_order_complexity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:11.216" endtime="20190530 13:24:12.462"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:11.215" endtime="20190530 13:24:12.462"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${simple_order_complexity}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:12.467" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20190530 13:24:12.462" endtime="20190530 13:24:12.619"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:10.317" endtime="20190530 13:24:12.619"></status>
+</kw>
+<kw name="Select the Order Type" library="screen4_buyEquity">
+<arguments>
+<arg>${input_order_type}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${order_type}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:12.621" endtime="20190530 13:24:13.429"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:12.620" endtime="20190530 13:24:13.429"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${order_type}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:13.433" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.RelativeLayout[3]/android.widget.RelativeLayout/android.widget.Spinner/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20190530 13:24:13.429" endtime="20190530 13:24:13.620"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${limit_order_type}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:13.621" endtime="20190530 13:24:14.744"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:13.620" endtime="20190530 13:24:14.744"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${limit_order_type}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:14.748" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20190530 13:24:14.744" endtime="20190530 13:24:14.912"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:12.620" endtime="20190530 13:24:14.912"></status>
+</kw>
+<kw name="Select the Buy Price" library="screen4_buyEquity">
+<arguments>
+<arg>${input_buy_price}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${buy_price}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:14.914" endtime="20190530 13:24:15.779"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:14.913" endtime="20190530 13:24:15.779"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${buy_price}</arg>
+<arg>${input_buy_price}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:15.784" level="INFO">Typing text '2' into text field 'in.upstox.pro:id/price_value'</msg>
+<status status="PASS" starttime="20190530 13:24:15.779" endtime="20190530 13:24:20.842"></status>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" starttime="20190530 13:24:20.843" endtime="20190530 13:24:21.203"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:14.913" endtime="20190530 13:24:21.203"></status>
+</kw>
+<kw name="Select the Product Type" library="screen4_buyEquity">
+<arguments>
+<arg>${input_product_type}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${product_type}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:21.214" endtime="20190530 13:24:22.022"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:21.214" endtime="20190530 13:24:22.022"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${product_type}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:22.026" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.RelativeLayout[5]/android.widget.RelativeLayout/android.widget.Spinner/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20190530 13:24:22.022" endtime="20190530 13:24:22.314"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${interday_product_type}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:22.315" endtime="20190530 13:24:23.342"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:22.314" endtime="20190530 13:24:23.342"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${interday_product_type}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:23.347" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20190530 13:24:23.342" endtime="20190530 13:24:23.509"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:21.213" endtime="20190530 13:24:23.509"></status>
+</kw>
+<kw name="Select the Validity" library="screen4_buyEquity">
+<arguments>
+<arg>${input_validity}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${validity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:23.510" endtime="20190530 13:24:24.843"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:23.510" endtime="20190530 13:24:24.843"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${validity}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:24.847" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.RelativeLayout[6]/android.widget.RelativeLayout/android.widget.Spinner/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20190530 13:24:24.843" endtime="20190530 13:24:25.136"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${day_validity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:25.137" endtime="20190530 13:24:26.118"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:25.136" endtime="20190530 13:24:26.118"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${day_validity}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:26.122" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20190530 13:24:26.118" endtime="20190530 13:24:26.313"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:23.509" endtime="20190530 13:24:26.313"></status>
+</kw>
+<kw name="Select the Disclose QTY" library="screen4_buyEquity">
+<arguments>
+<arg>${input_disclose_quantity}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${disclose_quantity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:26.314" endtime="20190530 13:24:27.037"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:26.314" endtime="20190530 13:24:27.037"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${disclose_quantity}</arg>
+<arg>${input_disclose_quantity}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:27.041" level="INFO">Typing text '1' into text field 'in.upstox.pro:id/disclosed_qty_value'</msg>
+<status status="PASS" starttime="20190530 13:24:27.037" endtime="20190530 13:24:31.776"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:26.313" endtime="20190530 13:24:31.776"></status>
+</kw>
+<kw name="Click on Review Button" library="screen4_buyEquity">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${review_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:31.777" endtime="20190530 13:24:32.381"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:31.777" endtime="20190530 13:24:32.381"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${review_button}</arg>
+</arguments>
+<msg timestamp="20190530 13:24:32.386" level="INFO">Clicking element '//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout'.</msg>
+<status status="PASS" starttime="20190530 13:24:32.382" endtime="20190530 13:24:32.834"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:31.777" endtime="20190530 13:24:32.834"></status>
+</kw>
+<kw name="Details added successfully" library="screen4_buyEquity">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${review_scree}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:32.835" endtime="20190530 13:24:34.030"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:32.835" endtime="20190530 13:24:34.030"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${review_scree}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:34.030" endtime="20190530 13:24:34.134"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:32.835" endtime="20190530 13:24:34.134"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:23:58.355" endtime="20190530 13:24:34.134" critical="yes"></status>
+</test>
+<test id="s1-t7" name="7. Verify the details and buy the Equity">
+<kw name="Review all the details" library="screen5_reviewAndbuy">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${review_screen}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:34.136" endtime="20190530 13:24:34.292"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:34.136" endtime="20190530 13:24:34.292"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${review_screen}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:34.292" endtime="20190530 13:24:34.853"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:34.135" endtime="20190530 13:24:34.853"></status>
+</kw>
+<kw name="Equity Details verified successfully" library="screen5_reviewAndbuy">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${price}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:34.864" endtime="20190530 13:24:34.945"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:34.863" endtime="20190530 13:24:34.946"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${price}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:34.946" endtime="20190530 13:24:35.150"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${quantity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:35.150" endtime="20190530 13:24:35.297"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:35.150" endtime="20190530 13:24:35.297"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${quantity}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:35.297" endtime="20190530 13:24:35.343"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${order_type}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:35.344" endtime="20190530 13:24:35.570"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:35.343" endtime="20190530 13:24:35.570"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${order_type}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:35.570" endtime="20190530 13:24:35.664"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${position}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:35.665" endtime="20190530 13:24:35.757"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:35.664" endtime="20190530 13:24:35.757"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${position}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:35.757" endtime="20190530 13:24:35.847"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${validity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:35.847" endtime="20190530 13:24:36.021"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:35.847" endtime="20190530 13:24:36.021"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${validity}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:36.021" endtime="20190530 13:24:36.162"></status>
+</kw>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${disclose_qty}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:36.163" endtime="20190530 13:24:36.246"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:36.162" endtime="20190530 13:24:36.246"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${disclose_qty}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:36.246" endtime="20190530 13:24:36.296"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:34.863" endtime="20190530 13:24:36.296"></status>
+</kw>
+<kw name="Buy the Equity" library="screen5_reviewAndbuy">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${buy_equity_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:36.297" endtime="20190530 13:24:36.367"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:36.297" endtime="20190530 13:24:36.367"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>${buy_equity_button}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:36.367" endtime="20190530 13:24:36.647"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:36.296" endtime="20190530 13:24:36.647"></status>
+</kw>
+<kw name="Verify the Error for guest user" library="screen5_reviewAndbuy">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${guest_accout_error}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:36.683" endtime="20190530 13:24:39.532"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:36.682" endtime="20190530 13:24:39.532"></status>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<doc>Verifies that element identified with locator is visible.</doc>
+<arguments>
+<arg>${guest_accout_error}</arg>
+</arguments>
+<status status="PASS" starttime="20190530 13:24:39.532" endtime="20190530 13:24:39.643"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:36.682" endtime="20190530 13:24:39.643"></status>
+</kw>
+<status status="PASS" starttime="20190530 13:24:34.135" endtime="20190530 13:24:39.643" critical="yes"></status>
+</test>
+<doc>This Suite Contains the Test Cases for Install and Launcher Activity</doc>
+<status status="PASS" starttime="20190530 13:21:59.876" endtime="20190530 13:24:39.645"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0">Critical Tests</stat>
+<stat pass="7" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" id="s1" name="ustory1 BuyanEquity">ustory1 BuyanEquity</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

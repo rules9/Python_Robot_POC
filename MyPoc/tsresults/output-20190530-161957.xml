@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190530 16:19:57.449" rpa="false">
+<suite id="s1" name="ustory1 BuyanEquity" source="C:\Users\Shivam.raghuwanshi\PycharmProjects\MyPoc\testsuite\ustory1_BuyanEquity.robot">
+<test id="s1-t1" name="1: Install and Open App">
+<kw name="Install and Open application" library="utility_setup">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${appium_host}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>platformVersion=${platform_version}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>app=${app}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+</arguments>
+<msg timestamp="20190530 16:20:00.042" level="INFO">Could not connect to port 4723 on host localhost</msg>
+<msg timestamp="20190530 16:20:00.042" level="INFO">Could not get IP address for host: localhost</msg>
+<msg timestamp="20190530 16:20:02.047" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x034EEFD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20190530 16:20:04.055" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03C58C10&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20190530 16:20:06.060" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03C585D0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190530 16:20:08.072" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.066" endtime="20190530 16:20:08.072"></status>
+</kw>
+<msg timestamp="20190530 16:20:08.076" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.142" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03C58390&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<status status="FAIL" starttime="20190530 16:19:58.030" endtime="20190530 16:20:08.142"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:19:58.029" endtime="20190530 16:20:08.143"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:19:58.029" endtime="20190530 16:20:08.150" critical="yes">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03C58390&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
+</test>
+<test id="s1-t2" name="2: Navigate to Home Screen">
+<kw name="Click on Skip Button" library="screen1_landing">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${skip_button}</arg>
+</arguments>
+<msg timestamp="20190530 16:20:08.157" level="INFO">Clicking element 'in.upstox.pro:id/intro_btn_skip'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190530 16:20:08.160" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.157" endtime="20190530 16:20:08.160"></status>
+</kw>
+<msg timestamp="20190530 16:20:08.166" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.169" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.152" endtime="20190530 16:20:08.169"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.152" endtime="20190530 16:20:08.169"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.151" endtime="20190530 16:20:08.169" critical="yes">No application is open</status>
+</test>
+<test id="s1-t3" name="3. Log-in through left drawer">
+<kw name="Open the left drwaer" library="screen2_home">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${leftmenu}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190530 16:20:08.175" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.172" endtime="20190530 16:20:08.175"></status>
+</kw>
+<msg timestamp="20190530 16:20:08.186" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.189" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.171" endtime="20190530 16:20:08.190"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.171" endtime="20190530 16:20:08.190"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.171" endtime="20190530 16:20:08.190"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.170" endtime="20190530 16:20:08.198" critical="yes">No application is open</status>
+</test>
+<test id="s1-t4" name="4. Select and Buy the provided Equity">
+<kw name="Select Given Equity" library="screen2_home">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>${swipe_x}</arg>
+<arg>${swipe_y}</arg>
+<arg>${swipe_end_x}</arg>
+<arg>${swipe_end_y}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190530 16:20:08.207" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.205" endtime="20190530 16:20:08.207"></status>
+</kw>
+<msg timestamp="20190530 16:20:08.213" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190530 16:20:08.217" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.215" endtime="20190530 16:20:08.217"></status>
+</kw>
+<msg timestamp="20190530 16:20:08.222" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.224" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.200" endtime="20190530 16:20:08.224"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.200" endtime="20190530 16:20:08.224"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.199" endtime="20190530 16:20:08.232" critical="yes">No application is open</status>
+</test>
+<test id="s1-t5" name="5. Verify the Contents present at Equity port screen">
+<kw name="Verify the sell button present" library="screen3_equityports">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${sell_button}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190530 16:20:08.238" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.236" endtime="20190530 16:20:08.238"></status>
+</kw>
+<msg timestamp="20190530 16:20:08.247" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.275" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.235" endtime="20190530 16:20:08.275"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.235" endtime="20190530 16:20:08.275"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.235" endtime="20190530 16:20:08.275"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.234" endtime="20190530 16:20:08.277" critical="yes">No application is open</status>
+</test>
+<test id="s1-t6" name="6. Fill all the purchase details">
+<kw name="Enter the quantity" library="screen4_buyEquity">
+<arguments>
+<arg>${quantiy_of_product}</arg>
+</arguments>
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${quantity}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190530 16:20:08.284" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.280" endtime="20190530 16:20:08.284"></status>
+</kw>
+<msg timestamp="20190530 16:20:08.292" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.317" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.280" endtime="20190530 16:20:08.317"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.279" endtime="20190530 16:20:08.317"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.279" endtime="20190530 16:20:08.318"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.278" endtime="20190530 16:20:08.336" critical="yes">No application is open</status>
+</test>
+<test id="s1-t7" name="7. Verify the details and buy the Equity">
+<kw name="Review all the details" library="screen5_reviewAndbuy">
+<kw name="Wait for Element to get visible" library="screen1_landing">
+<arguments>
+<arg>${review_screen}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+<arg>${high_wait_time}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190530 16:20:08.416" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.414" endtime="20190530 16:20:08.417"></status>
+</kw>
+<msg timestamp="20190530 16:20:08.427" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.441" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20190530 16:20:08.413" endtime="20190530 16:20:08.441"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.413" endtime="20190530 16:20:08.441"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.412" endtime="20190530 16:20:08.442"></status>
+</kw>
+<status status="FAIL" starttime="20190530 16:20:08.390" endtime="20190530 16:20:08.442" critical="yes">No application is open</status>
+</test>
+<doc>This Suite Contains the Test Cases for Install and Launcher Activity</doc>
+<status status="FAIL" starttime="20190530 16:19:57.453" endtime="20190530 16:20:08.444"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="7">Critical Tests</stat>
+<stat pass="0" fail="7">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="7" id="s1" name="ustory1 BuyanEquity">ustory1 BuyanEquity</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190530 16:20:02.047" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x034EEFD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20190530 16:20:04.055" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03C58C10&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20190530 16:20:06.060" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03C585D0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20190530 16:20:08.076" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.166" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.186" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.213" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.222" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.247" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.292" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20190530 16:20:08.427" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
