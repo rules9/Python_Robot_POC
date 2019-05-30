@@ -4,6 +4,7 @@
 This project is a POC that is created to demonstrate Mobile Automation performed with the help of “RobotFramework” and “Python” technology. This POC contains a basic user workflow of the user Log-in and Buy Equity.
 For demonstration purpose this POC uses Upstox pro public [Android app](https://play.google.com/store/apps/details?id=in.upstox.pro&hl=en_IN). This test can seamlessly be performed on any other iOS/Android apps with minor script changes in the workflow and configuration. 
 
+### Note: The Signed apk will work on the Real devices for Emulators we need unsigned apk.
 
 # Tools and Technology Used:
     1.	Python  3.7 and above (Robot Framework works with this version of Python)
