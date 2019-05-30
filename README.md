@@ -17,12 +17,19 @@ For demonstration purpose this POC uses Upstox pro public [Android app](https://
 ## Prerequisite:
 ###  Environmental: Environmental Variable is already configured for
     1.1	Java home
+    
     1.2	Android Home
+    
     1.3	Node 
+    
     1.4	Appium Library
+    
     1.5	PyCharm
+    
     1.6	Robot Framework
+    
     1.7	Python Home
+    
     1.8	Android Apk (On which the test has to be performed)
 
 ###	Application: Test data should be available for the desired workflow
@@ -32,21 +39,33 @@ For demonstration purpose this POC uses Upstox pro public [Android app](https://
 ###	Robot Automation Script: Robot script needs some device and apk configuration to 
 run the scripts in perfect way.
  ##### File: Utility_setup.robot
+ 
     1.1.1	${automationName}      	:  Appium
+    
     1.1.2	${appium_host}          : http://localhost:4723/wd/hub
+    
     1.1.3	${platformName}       	:  Android
+    
     1.1.4	${platform_version}    	: 9 (Depends on Device)
+    
     1.1.5	${deviceName}           : emulator-5554 (Based on Real or Emulator)
+    
     1.1.6	${appPackage}           : in.upstox.pro
+    
     1.1.7	${appActivity}          : .views.main.UpstoxLauncherActivity
+    
     1.1.8	${app}                  : “$local/apk/path”
+    
     1.1.9	${alias}                : upstox
+    
+
 
 
 # ROBOTSCRIPTS Architecture:
 Robot Framework is basically aligned for acceptance Test driven development (ATDD), along with that this POC is designed based on the Page object modeling as each screen is dived into module. Along with that this POC behaves in Keyword driven modeling. So altogether it is the complete Hybrid solution for Mobile Automation.
 	The project for the POC structure is as follow:
 ### MyPOC >> testsuite 
+
 1	ustory1_BuyanEquity (Test Script): This is the user story based test script, where you find one user story is implemented with the help of screen resources file.
 The test steps are written in such a way that anyone can get the idea what is being executed.
 
@@ -61,13 +80,29 @@ The test steps are written in such a way that anyone can get the idea what is be
 1.1	utility_setup.robot
 
 2.	POM based Resources:
-2.1	screen0_login.robot
-2.2	screen1_landing.robot
-2.3	screen2_home.robot
-2.4	screen3_equityports.robot
-2.5	screen4_buyEquity.robot
-2.6	screen5_reviewAndbuy.robot
-2/7	screenA_leftdrawer.robot
+
+	2.1	screen0_login.robot
+	
+	
+	2.2	screen1_landing.robot
+	
+	
+	2.3	screen2_home.robot
+	
+
+	2.4	screen3_equityports.robot
+	
+	
+	2.5	screen4_buyEquity.robot
+	
+	
+	2.6	screen5_reviewAndbuy.robot
+	
+	
+	2/7	screenA_leftdrawer.robot
+	
+	
+	
 
 
 
@@ -79,15 +114,20 @@ The test steps are written in such a way that anyone can get the idea what is be
 	Below is the process that gives you the idea how to execute the scripts.
 Prerequisite:  Considering some basic aspects that are already configured and present, those are:
 a.	All the tools and its path setup
+
 b.	Test data is already present
 
+
 1.	Update the pip using:
+
 	1.1	pip install --upgrade pip
 
 2.	Install Robot Appium-Library using:
+
 	1.2	pip install robotframework-appiumlibrary
 
 3.	Start the emulator 
+
 	3.1	Create a device with latest configuration and mention the same in the utilites_setup.robot file.
 	
 	3.2	In case of Real device mention the device name and configuration.
@@ -96,21 +136,28 @@ b.	Test data is already present
 
 4.	Configure the Appium for local host and Android Home
  
-
 5.	Start the Appium at local host.
 
 6.	Run the Robot script using command:
 
 ##### command : Robot  -T –d 	<result-directory-name> <script-path>.robot.
+	
 1	-T : Generated report with Data and Time stamp 
+
 2	-d : For creating results directory
 
 
+
 ## Note: The POC is created in a short duration hence work is in-progress mainly for 
-1	Code optimization
-2	Script performance
-3	Script Designing
-4	Test cases for iOS app will be added soon
+
+1 Code optimization
+
+2 Script performance
+
+3 Script Designing
+
+4 Test cases for iOS app will be added soon
+
 Rest of the things will also be taken care when it is completed fully.
 
 ### Reference: Refer Wiki for more information. 
