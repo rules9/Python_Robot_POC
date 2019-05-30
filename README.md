@@ -98,12 +98,12 @@ b.	Test data is already present
 
 6.	Run the Robot script using command:
 
-#### Robot  -T –d 	<result-directory-name> 	<script-path>.robot.
+#######  command : Robot  -T –d 	<result-directory-name> <script-path>.robot.
 •	-T : Generated report with Data and Time stamp 
 •	-d : For creating results directory
 
 
-# Note: The POC is created in a short duration hence work is in-progress mainly for 
+## Note: The POC is created in a short duration hence work is in-progress mainly for 
 •	Code optimization
 •	Script performance
 •	Script Designing
