@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testsuite/resources/screenA_leftdrawer.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+            <state relative-caret-position="119">
+              <caret line="7" column="294" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="294" />
               <folding>
                 <element signature="e#0#153#0" expanded="true" />
               </folding>
@@ -124,6 +124,7 @@
       <find>in.upstox.pro:id/textViewError</find>
       <find>//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[10]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView[1]</find>
       <find>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[5]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView[1]</find>
+      <find>//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -168,22 +169,6 @@
             <path>
               <item name="MyPoc" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyPoc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyPoc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyPoc" type="462c0819:PsiDirectoryNode" />
-              <item name="testsuite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyPoc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyPoc" type="462c0819:PsiDirectoryNode" />
-              <item name="testsuite" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyPoc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyPoc" type="462c0819:PsiDirectoryNode" />
-              <item name="tsresults" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -258,16 +243,15 @@
       <workItem from="1559021321420" duration="7147000" />
       <workItem from="1559029868668" duration="13854000" />
       <workItem from="1559123239913" duration="1139000" />
-      <workItem from="1559200919175" duration="6708000" />
+      <workItem from="1559200919175" duration="7319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31005000" />
+    <option name="totallyTimeSpent" value="31616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26066098" />
@@ -388,8 +372,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testsuite/resources/screenA_leftdrawer.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        <state relative-caret-position="119">
+          <caret line="7" column="294" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="294" />
           <folding>
             <element signature="e#0#153#0" expanded="true" />
           </folding>
