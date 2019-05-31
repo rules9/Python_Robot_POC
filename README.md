@@ -147,21 +147,21 @@ b.	Test data is already present
 
 ##### command : Robot  -T –d 	<result-directory-name> <script-path>.robot.
 	
-1	-T : Generated report with Data and Time stamp 
+1		-T : Generated report with Data and Time stamp 
 
-2	-d : For creating results directory
+2		-d : For creating results directory
 
 
 
 ## Note: The POC is created in a short duration hence work is in-progress mainly for 
 
-1 Code optimization
+1 	Code optimization
 
-2 Script performance
+2 	Script performance
 
-3 Script Designing
+3 	Script Designing
 
-4 Test cases for iOS app will be added soon
+4 	Test cases for iOS app will be added soon
 
 Rest of the things will also be taken care when it is completed fully.
 
